@@ -1,0 +1,26 @@
+# Директории с зависимостями
+node_modules/
+packages/**/node_modules/
+
+# Локальные файлы для VSCode
+.vscode/
+
+# Лог-файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Папки, создаваемые сборкой
+/dist
+/.vite
+
+# Файлы временных и кэшированных данных
+.DS_Store
+Thumbs.db
+
+# Резервные файлы
+*~
+*.bak
+
+# Для Windows
+Thumbs.db

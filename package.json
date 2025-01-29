@@ -1,0 +1,29 @@
+{
+  "name": "puzle-production",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "npm workspace server node packages/server/server.js",
+    "dev:client": "npm yarn workspace client vite",
+    "dev": "concurrently \"npm dev:server\" \"npm dev:client\"",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikhalevArtem/puzle-production.git"
+  },
+  "author": "mikhalevardm@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikhalevArtem/puzle-production/issues"
+  },
+  "homepage": "https://github.com/MikhalevArtem/puzle-production#readme",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
